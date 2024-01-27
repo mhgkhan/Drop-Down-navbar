@@ -1,0 +1,160 @@
+/* https://mhgkhan.github.io/hasnain.dev/ */
+/* https://github.com/mhgkhan */
+/* follow  */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: .2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+header {
+    background: darkblue;
+}
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .container .logo {
+    padding: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0px 0px 12px darkblue;
+    border-radius: 12px 12px 0px 0px;
+}
+
+header .container .logo h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: darkmagenta;
+    position: relative;
+}
+
+
+header .container nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    list-style: none;
+}
+
+header .container ul li {
+    margin: 0px 10px;
+}
+
+header .container ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background: white; */
+    padding: 24px 8px;
+    border-radius: 12px 12px 0px 0px;
+    text-decoration: none;
+    /* color: darkmagenta; */
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+/* i styled this (ul) inner in the services li  */
+/* inner ul (dropdown) */
+.serviceli {
+    position: relative;
+}
+
+.serviceli a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.serviceli ul {
+    position: absolute;
+    /* background: black; */
+    color: white;
+    display: none !important;
+    /* transform:skewX(129deg); */
+}
+
+.serviceli ul {
+    flex-direction: column;
+}
+
+.serviceli ul li {
+    margin: .5rem 0px !important;
+    padding: 10px;
+    width: 150px;
+    background: darkblue;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+    /* animation: ani 0s 3s ease-in; */
+    transform: skewX(20deg);
+    animation: ani .1s 0ms linear;
+    border: 1px solid darkgray;
+}
+
+.serviceli ul li:hover {
+    background: white;
+    color: darkmagenta;
+    transform: skewX(0deg);
+}
+
+/* (**********************************) */
+
+
+header .container ul li a:hover {
+    background: white;
+    color: darkmagenta;
+}
+
+
+@media screen and (max-width:550px){
+    html{
+        font-size: 80%;
+    }
+    .container{
+        flex-direction: column;
+        gap: 10px
+        ;
+    }
+
+    .container ul li a{
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
