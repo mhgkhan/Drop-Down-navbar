@@ -11,6 +11,6 @@ document.querySelector(".serviceli").addEventListener("mouseenter", (e) => {
     e.target.querySelector("ul").setAttribute("style", "display:flex !important")
 })
 document.querySelector(".serviceli").addEventListener("mouseleave", (e) => {
-    e.target.querySelector("a").setAttribute("style", "background:blue; color:white")
+    e.target.querySelector("a").setAttribute("style", "background:none; color:white")
     e.target.querySelector("ul").setAttribute("style", "display:none !important")
 })
